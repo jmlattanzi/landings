@@ -1,0 +1,87 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  font-family: 'Lato', sans-serif; }
+
+.app {
+  font-size: 1.6rem;
+  height: 100vh; }
+
+.header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  height: 6.5rem; }
+  .header__container {
+    display: flex; }
+  .header__logo {
+    margin: 2rem 2rem;
+    letter-spacing: .5rem; }
+  .header__link {
+    margin: 2rem 2rem; }
+    .header__link:hover {
+      border-bottom: 3px solid teal; }
+
+.container {
+  display: flex; }
+
+.sidebar {
+  width: 60rem;
+  height: 93vh;
+  padding: 2rem;
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../img/coffee.jpg");
+  text-align: center; }
+
+.content {
+  width: 100%;
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../img/office.jpg");
+  background-size: contain; }
+  .content__main {
+    height: 70vh;
+    padding: 2rem;
+    position: relative; }
+    .content__main--heading {
+      margin-bottom: 3rem; }
+    .content__main--text {
+      position: absolute;
+      top: 50%;
+      left: 60%;
+      transform: translate(-50%, -40%); }
+  .content__footer {
+    display: flex;
+    position: relative;
+    height: 23vh; }
+    .content__footer--left {
+      width: 40%;
+      height: 100%;
+      padding: 2rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(255, 255, 255, 0.8); }
+    .content__footer--right {
+      width: 60%;
+      height: 150%;
+      padding: 2rem;
+      position: absolute;
+      top: -50%;
+      left: 40%;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.8);
+      text-align: center; }
+      .content__footer--right--text {
+        margin-bottom: 3rem;
+        font-size: 2rem;
+        text-align: center; }
+
+.button--primary {
+  text-decoration: none;
+  color: #000;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem 3rem;
+  background-color: #fff; }

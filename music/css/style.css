@@ -1,0 +1,85 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  font-family: 'Lato', sans-serif; }
+
+.container {
+  font-size: 1.6rem;
+  display: flex;
+  height: 100vh; }
+  @media (max-width: 600px) {
+    .container {
+      flex-direction: column; } }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 4.6rem;
+  padding: 4rem; }
+  .header__nav {
+    display: flex; }
+    .header__nav--link {
+      font-weight: 700;
+      font-size: 1.8rem;
+      margin: 1rem 2rem;
+      transition: all .2s; }
+      .header__nav--link:hover {
+        border-top: 3px solid #008080; }
+
+.right {
+  width: 70%;
+  position: relative; }
+  .right__content {
+    padding: 1rem;
+    margin: 8rem 6rem;
+    display: flex;
+    flex-direction: column; }
+    .right__content--text-area {
+      line-height: 3rem;
+      font-weight: 400;
+      text-align: left;
+      width: 70%;
+      margin: 3rem 0; }
+      .right__content--text-area--header {
+        margin: 3rem 0;
+        font-size: 6rem; }
+  .right__player {
+    padding: 2rem;
+    background-color: #000;
+    color: white;
+    display: flex;
+    position: absolute;
+    bottom: 0; }
+    .right__player--cover {
+      background-image: url("../img/bw-flower-2.JPG");
+      background-size: cover;
+      border-radius: 1rem;
+      width: 30%;
+      margin: 0 1rem; }
+    .right__player--text {
+      margin: 2rem;
+      line-height: 2rem; }
+      .right__player--text > h3 {
+        margin: 1rem 0; }
+
+.left {
+  width: 60%;
+  background-image: url("../img/bw-flower-2.JPG");
+  background-size: cover; }
+
+.button {
+  border: 1px solid #000;
+  width: 13rem;
+  border-radius: 100rem;
+  padding: 1rem 3rem;
+  text-decoration: none;
+  color: #000;
+  transition: all .2s; }
+  .button:hover {
+    color: white;
+    background-color: #000; }

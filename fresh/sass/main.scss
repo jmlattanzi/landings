@@ -1,0 +1,135 @@
+// variables
+$default-font-size: 1.6rem;
+$color-black: #000;
+$color-white: #fff;
+$color-header: #234;
+
+// browser reset
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
+}
+
+// main layout
+.app {
+    font-size: $default-font-size;
+    height: 100vh;
+}
+
+.header {
+    border-bottom: 1px solid rgba($color-black, 0.1);
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-white;
+    height: 6.5rem;
+
+    &__container {
+        display: flex;
+    }
+
+    &__logo {
+        margin: 2rem 2rem;
+        letter-spacing: .5rem;
+    }
+
+    &__link {
+        margin: 2rem 2rem;
+
+        &:hover {
+            border-bottom: 3px solid teal;
+        }
+    }
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 60rem;
+    height: 93vh;
+    // border-right: 1px solid rgba($color-black, 0.1);
+    padding: 2rem;
+    background-image: linear-gradient(to right bottom,
+        rgba($color-white, 0.7),
+        rgba($color-white, 0.7)), 
+        url('../img/coffee.jpg');
+    text-align: center;
+}
+
+.content {
+    width: 100%;
+    background-image: linear-gradient(to right bottom,
+    rgba($color-white, 0.7),
+    rgba($color-white, 0.7)),url('../img/office.jpg');
+    background-size: contain;
+
+    &__main {
+        height: 70vh;
+        padding: 2rem;
+        position: relative;
+
+        &--heading {
+            margin-bottom: 3rem;
+        }
+
+        &--text {
+            position: absolute;
+            top: 50%;
+            left: 60%;
+            transform: translate(-50%, -40%);
+        }
+    }
+
+    &__footer {
+        display: flex;
+        position: relative;
+        height: 23vh;
+
+        &--left {
+            width: 40%;
+            height: 100%;
+            padding: 2rem;
+            // border: 1px solid rgba($color-black, 0.1);
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba($color-white, 0.8);;
+        }
+
+        &--right {
+            width: 60%;
+            height: 150%;
+            padding: 2rem;
+            // border: 1px solid rgba($color-black, 0.1);
+            position: absolute;
+            top: -50%;
+            left: 40%;
+            color: $color-white;
+            background-color: rgba($color-black, 0.8);
+            text-align: center;
+
+            &--text {
+                margin-bottom: 3rem;
+                font-size: 2rem;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.button {
+    &--primary {
+        text-decoration: none;
+        color: $color-black;
+        border: 1px solid rgba($color-black, 0.1);
+        padding: 1rem 3rem;
+        background-color: #fff;
+    }
+}

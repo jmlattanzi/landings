@@ -1,0 +1,109 @@
+// variables
+$default-font-size: 1.6rem;
+$color-black: #000;
+$color-white: #fff;
+
+// reset
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Playfair Display', serif;
+}
+
+.container {
+    background-image: url('../img/bg.jpg');
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+
+.header {
+    color: $color-white;
+    font-size: 10rem;
+    text-align: center;
+}
+
+.details {
+    z-index: 1000;
+    width: 8rem;
+    height: 70%;
+    border: 1px solid $color-white;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    box-shadow: 0 6px 8px rgba($color-black, 0.4);
+    background-color: $color-white;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .2s;
+
+    &:hover {
+        width: 25%;
+    }
+
+    &__icon {
+        height: 5rem;
+        width: 5rem;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__content {
+        display: none;
+        padding: 2rem;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__header {
+        font-size: 3rem;
+
+        &--secondary {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__description {
+        font-size: $default-font-size;
+        margin-bottom: 2rem;
+    }
+
+    &__pricing {
+        width: 50%;
+        text-align: center;
+        margin: 2rem auto;
+        &__item {
+            font-size: $default-font-size;
+            padding: 1rem;
+
+            &:not(:last-child) {
+                border-bottom: 1px solid black;
+            }
+        }
+    }
+}
+
+.navigation {
+    color: $color-white;
+    font-size: $default-font-size;
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    position: absolute;
+    bottom: 0;
+
+    &__item {
+        font-size: 2rem;
+        font-weight: 400;
+        margin: 1rem 3rem;
+    }
+}

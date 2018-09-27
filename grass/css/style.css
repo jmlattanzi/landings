@@ -1,0 +1,91 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  font-family: 'Lato', sans-serif; }
+
+.header {
+  font-size: 1.6rem;
+  display: flex;
+  padding: 2rem 3rem;
+  width: 100%; }
+  .header__logo {
+    font-size: 4rem; }
+  .header__nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%; }
+    .header__nav--link {
+      margin: 2.5rem 3rem;
+      font-weight: 700; }
+
+.container {
+  font-size: 1.6rem;
+  width: 100%;
+  height: 80vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between; }
+
+.right {
+  width: 50%;
+  position: relative;
+  margin-top: 10rem;
+  padding: 0 8rem; }
+  .right__header {
+    margin: 3.5rem 0; }
+  .right__content {
+    line-height: 3rem;
+    margin-bottom: 3rem; }
+  .right__bottom-bar {
+    position: absolute;
+    bottom: -3rem;
+    left: 20%;
+    width: 100%;
+    height: 10rem;
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 4px 8px 6px rgba(0, 0, 0, 0.4);
+    border-radius: 2rem; }
+    .right__bottom-bar--text {
+      padding: 3rem; }
+      .right__bottom-bar--text > h3 {
+        text-align: center; }
+    .right__bottom-bar--left, .right__bottom-bar--right {
+      text-align: center;
+      padding: 2.5rem 0;
+      height: 100%;
+      width: 20%;
+      color: #000;
+      font-size: 3rem;
+      background-color: goldenrod; }
+    .right__bottom-bar--left {
+      border-top-left-radius: .5rem;
+      border-bottom-left-radius: .5rem; }
+    .right__bottom-bar--right {
+      border-top-right-radius: .5rem;
+      border-bottom-right-radius: .5rem; }
+
+.left {
+  width: 50%;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-position-x: 80%;
+  box-shadow: 4px 8px 6px rgba(0, 0, 0, 0.4);
+  border-radius: .5rem;
+  margin-right: 5rem; }
+
+.button {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid #000;
+  padding: 1rem 2rem;
+  transition: all .5s; }
+  .button:hover {
+    border: 1px solid #000; }
